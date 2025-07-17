@@ -1,8 +1,8 @@
 class Tydirium < Formula
   desc "Email authentication checker - It's an older email, sir, but it checks out"
   homepage "https://github.com/agentstation/tydirium"
-  url "https://github.com/agentstation/tydirium/archive/refs/tags/v1.4.0.tar.gz"
-  sha256 "3b12eb3b2a176b8fe90c6bfa711e90af5df453afdc0c48e5224b00573ea9e8b3"
+  url "https://github.com/agentstation/tydirium/archive/refs/tags/v1.4.1.tar.gz"
+  sha256 "d5ef63097fed0b82f9c31b42ea128fd8f9bedd07a761965bf98505bd877d47af"
   license "MIT"
   head "https://github.com/agentstation/tydirium.git", branch: "master"
 
