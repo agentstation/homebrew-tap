@@ -96,20 +96,6 @@ class Tydirium < Formula
       May the Force be with your email deliverability!
     EOS
 
-    # Add upgrade-specific message
-    if upgrade?
-      s = <<~EOS
-        #{Tty.bold}🆕 Upgraded to tydirium #{version}!#{Tty.reset}
-        
-        What's new:
-        #{Tty.green}✓#{Tty.reset} Version flag support (-V)
-        #{Tty.green}✓#{Tty.reset} Shell completions for bash, zsh, and fish
-        #{Tty.green}✓#{Tty.reset} Enhanced DNS server connectivity checks
-        #{Tty.green}✓#{Tty.reset} More reliable DNS lookups using provider domains
-
-      EOS
-      s += "\n" + s
-    end
 
     s
   end
