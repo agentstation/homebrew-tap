@@ -10,6 +10,20 @@ brew tap agentstation/tap
 
 ## Available Formulas
 
+### pocket
+
+Graph execution engine for LLM workflows - CLI tool for executing workflows defined as graphs.
+
+```bash
+brew install agentstation/tap/pocket
+```
+
+Or directly:
+
+```bash
+brew install agentstation/tap/pocket
+```
+
 ### tydirium
 
 Email authentication checker - "It's an older email, sir, but it checks out."
