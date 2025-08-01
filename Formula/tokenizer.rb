@@ -5,15 +5,15 @@
 class Tokenizer < Formula
   desc "High-performance tokenizer implementations in Go with unified CLI"
   homepage "https://github.com/agentstation/tokenizer"
-  version "0.0.4"
+  version "0.0.5"
   license "MIT"
 
   depends_on "go" => :build
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.4/tokenizer_0.0.4_darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "5fdab00675ebd7e7f46e99ea3d203d46499729b69830fe3c7e92de3058775d03"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.5/tokenizer_0.0.5_darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "61312bd0879f51ff93e0263d9e4f12c882455bde1ac9a877cd4a6f842ffa80ab"
 
       def install
         if build.bottle?
@@ -24,7 +24,7 @@ class Tokenizer < Formula
           ldflags = %W[
             -s -w
             -X main.version=#{version}
-            -X main.commit=1c64bee
+            -X main.commit=c9228ed
             -X main.buildDate=#{Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ")}
             -X main.goVersion=#{Formula["go"].version}
             -X main.builtBy=homebrew
@@ -44,8 +44,8 @@ class Tokenizer < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.4/tokenizer_0.0.4_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "981d58713ee6271e29ce5795f30f21bfb5a6d39c8fa721e109bcd8574c853a21"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.5/tokenizer_0.0.5_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "d9cd495dd8b7b2cb596026680572cc3a9e00016a7c3dba3f4146684c577e9ebf"
 
       def install
         if build.bottle?
@@ -56,7 +56,7 @@ class Tokenizer < Formula
           ldflags = %W[
             -s -w
             -X main.version=#{version}
-            -X main.commit=1c64bee
+            -X main.commit=c9228ed
             -X main.buildDate=#{Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ")}
             -X main.goVersion=#{Formula["go"].version}
             -X main.builtBy=homebrew
@@ -79,8 +79,8 @@ class Tokenizer < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.4/tokenizer_0.0.4_linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "1f802f554ddb7a613db997204f7bee32a628fb402a35c3b005fcb7c5df83361a"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.5/tokenizer_0.0.5_linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "d97f00396e313fad82b23199465c86d8b86b0499d5a36154208e7a985e18fbc4"
       def install
         if build.bottle?
           bin.install "tokenizer"
@@ -90,7 +90,7 @@ class Tokenizer < Formula
           ldflags = %W[
             -s -w
             -X main.version=#{version}
-            -X main.commit=1c64bee
+            -X main.commit=c9228ed
             -X main.buildDate=#{Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ")}
             -X main.goVersion=#{Formula["go"].version}
             -X main.builtBy=homebrew
@@ -110,8 +110,8 @@ class Tokenizer < Formula
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.4/tokenizer_0.0.4_linux_armv6.tar.gz", using: CurlDownloadStrategy
-      sha256 "5512a5779edf3be4fea7b9939b53606ff485697c3d84feacc3a3723133e89181"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.5/tokenizer_0.0.5_linux_armv6.tar.gz", using: CurlDownloadStrategy
+      sha256 "01df13defdf7dbfc39c386c261c0da2b901b92cae6da28088c127b7cc2e8fb21"
       def install
         if build.bottle?
           bin.install "tokenizer"
@@ -121,7 +121,7 @@ class Tokenizer < Formula
           ldflags = %W[
             -s -w
             -X main.version=#{version}
-            -X main.commit=1c64bee
+            -X main.commit=c9228ed
             -X main.buildDate=#{Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ")}
             -X main.goVersion=#{Formula["go"].version}
             -X main.builtBy=homebrew
@@ -141,8 +141,8 @@ class Tokenizer < Formula
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.4/tokenizer_0.0.4_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "11062b05628de586aa93c8941633d9781ec1a250768461bfbf63d036b19ce42c"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.5/tokenizer_0.0.5_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "400e940f157c9eec16d2fa8f568703e0ac9e46507eb68ee3dbc6f3503b078fd9"
       def install
         if build.bottle?
           bin.install "tokenizer"
@@ -152,7 +152,7 @@ class Tokenizer < Formula
           ldflags = %W[
             -s -w
             -X main.version=#{version}
-            -X main.commit=1c64bee
+            -X main.commit=c9228ed
             -X main.buildDate=#{Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ")}
             -X main.goVersion=#{Formula["go"].version}
             -X main.builtBy=homebrew
