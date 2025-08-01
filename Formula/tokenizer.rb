@@ -5,15 +5,15 @@
 class Tokenizer < Formula
   desc "High-performance tokenizer implementations in Go with unified CLI"
   homepage "https://github.com/agentstation/tokenizer"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   depends_on "go" => :build
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.2/tokenizer_0.0.2_darwin_x86_64.tar.gz"
-      sha256 "0b43dc693c1dc2bd75a0e07dd8c75ad04a2882fa3d231868d8808034c8493845"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.3/tokenizer_0.0.3_darwin_x86_64.tar.gz"
+      sha256 "e255ad4b680805006a1022adb04032889e28abc9e172dcbb57cf486322f81415"
 
       def install
         if build.bottle?
@@ -42,8 +42,8 @@ class Tokenizer < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.2/tokenizer_0.0.2_darwin_arm64.tar.gz"
-      sha256 "22e9229c57975aa484eeca48328d8cd36c08e6ea0479573c81802fc5445ab484"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.3/tokenizer_0.0.3_darwin_arm64.tar.gz"
+      sha256 "ce96824a9088ccaf5882d517b92df342aca4fc91a8447a4a7cec2b8d40d637f1"
 
       def install
         if build.bottle?
@@ -75,8 +75,8 @@ class Tokenizer < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.2/tokenizer_0.0.2_linux_x86_64.tar.gz"
-      sha256 "9824dfb55fd8067fa97fc3855748a8dcd3a6e3579d3891bbefbb09330e7e88dc"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.3/tokenizer_0.0.3_linux_x86_64.tar.gz"
+      sha256 "2da0055bf5fb92a5e8b525ac3446f808e40a87019e50fc7fbcb86006a45c206a"
       def install
         if build.bottle?
           bin.install "tokenizer"
@@ -104,8 +104,8 @@ class Tokenizer < Formula
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.2/tokenizer_0.0.2_linux_armv6.tar.gz"
-      sha256 "7a40a0b8fdb3be654b6cc1e34c304be3dce1d6b5e46ac7aaab0df04b5d8e87e7"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.3/tokenizer_0.0.3_linux_armv6.tar.gz"
+      sha256 "e1fc7e094e729e3da0e105f3024b36469383ee02f629b8c0bab68b031a4588e3"
       def install
         if build.bottle?
           bin.install "tokenizer"
@@ -133,8 +133,8 @@ class Tokenizer < Formula
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.2/tokenizer_0.0.2_linux_arm64.tar.gz"
-      sha256 "c204b4165772cede4e3c211d42e061ffedc9a698155e58fa1b5024abb98bd9fb"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.3/tokenizer_0.0.3_linux_arm64.tar.gz"
+      sha256 "1caaf50365e434a31d89d541b28dbbaa02e6410719102f0259233c12e946803e"
       def install
         if build.bottle?
           bin.install "tokenizer"
