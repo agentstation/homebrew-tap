@@ -10,6 +10,20 @@ brew tap agentstation/tap
 
 ## Available Formulas
 
+### tokenizer
+
+High-performance tokenizer implementations in Go with unified CLI. Features Llama 3 tokenizer with exact compatibility, streaming support, and comprehensive tooling.
+
+```bash
+brew install agentstation/tap/tokenizer
+```
+
+Or directly:
+
+```bash
+brew install agentstation/tap/tokenizer
+```
+
 ### pocket
 
 Graph execution engine for LLM workflows - CLI tool for executing workflows defined as graphs.
@@ -37,6 +51,26 @@ Or directly:
 ```bash
 brew install agentstation/tap/tydirium
 ```
+
+## Alternative Installation Methods
+
+These tools are also available via [Nix](https://nixos.org/) and [Devbox](https://www.jetify.com/devbox):
+
+### Using Devbox
+```bash
+devbox add github:agentstation/nix-packages#tokenizer
+devbox add github:agentstation/nix-packages#pocket
+devbox add github:agentstation/nix-packages#tydirium
+```
+
+### Using Nix
+```bash
+nix run github:agentstation/nix-packages#tokenizer -- --help
+nix run github:agentstation/nix-packages#pocket -- --help
+nix run github:agentstation/nix-packages#tydirium -- --help
+```
+
+For more Nix installation options, see [agentstation/nix-packages](https://github.com/agentstation/nix-packages).
 
 ## Development
 
