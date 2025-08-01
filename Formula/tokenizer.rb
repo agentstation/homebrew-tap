@@ -5,27 +5,29 @@
 class Tokenizer < Formula
   desc "High-performance tokenizer implementations in Go with unified CLI"
   homepage "https://github.com/agentstation/tokenizer"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   depends_on "go" => :build
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.3/tokenizer_0.0.3_darwin_x86_64.tar.gz"
-      sha256 "e255ad4b680805006a1022adb04032889e28abc9e172dcbb57cf486322f81415"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.4/tokenizer_0.0.4_darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "5fdab00675ebd7e7f46e99ea3d203d46499729b69830fe3c7e92de3058775d03"
 
       def install
         if build.bottle?
           bin.install "tokenizer"
         else
           # Build from source with version information
+          # Note: buildDate is the actual build time (now), not the commit date
           ldflags = %W[
             -s -w
             -X main.version=#{version}
-            -X main.commit=#{Utils.git_short_head}
+            -X main.commit=1c64bee
             -X main.buildDate=#{Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ")}
             -X main.goVersion=#{Formula["go"].version}
+            -X main.builtBy=homebrew
           ]
           system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/tokenizer"
         end
@@ -42,20 +44,22 @@ class Tokenizer < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.3/tokenizer_0.0.3_darwin_arm64.tar.gz"
-      sha256 "ce96824a9088ccaf5882d517b92df342aca4fc91a8447a4a7cec2b8d40d637f1"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.4/tokenizer_0.0.4_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "981d58713ee6271e29ce5795f30f21bfb5a6d39c8fa721e109bcd8574c853a21"
 
       def install
         if build.bottle?
           bin.install "tokenizer"
         else
           # Build from source with version information
+          # Note: buildDate is the actual build time (now), not the commit date
           ldflags = %W[
             -s -w
             -X main.version=#{version}
-            -X main.commit=#{Utils.git_short_head}
+            -X main.commit=1c64bee
             -X main.buildDate=#{Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ")}
             -X main.goVersion=#{Formula["go"].version}
+            -X main.builtBy=homebrew
           ]
           system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/tokenizer"
         end
@@ -75,19 +79,21 @@ class Tokenizer < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.3/tokenizer_0.0.3_linux_x86_64.tar.gz"
-      sha256 "2da0055bf5fb92a5e8b525ac3446f808e40a87019e50fc7fbcb86006a45c206a"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.4/tokenizer_0.0.4_linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "1f802f554ddb7a613db997204f7bee32a628fb402a35c3b005fcb7c5df83361a"
       def install
         if build.bottle?
           bin.install "tokenizer"
         else
           # Build from source with version information
+          # Note: buildDate is the actual build time (now), not the commit date
           ldflags = %W[
             -s -w
             -X main.version=#{version}
-            -X main.commit=#{Utils.git_short_head}
+            -X main.commit=1c64bee
             -X main.buildDate=#{Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ")}
             -X main.goVersion=#{Formula["go"].version}
+            -X main.builtBy=homebrew
           ]
           system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/tokenizer"
         end
@@ -104,19 +110,21 @@ class Tokenizer < Formula
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.3/tokenizer_0.0.3_linux_armv6.tar.gz"
-      sha256 "e1fc7e094e729e3da0e105f3024b36469383ee02f629b8c0bab68b031a4588e3"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.4/tokenizer_0.0.4_linux_armv6.tar.gz", using: CurlDownloadStrategy
+      sha256 "5512a5779edf3be4fea7b9939b53606ff485697c3d84feacc3a3723133e89181"
       def install
         if build.bottle?
           bin.install "tokenizer"
         else
           # Build from source with version information
+          # Note: buildDate is the actual build time (now), not the commit date
           ldflags = %W[
             -s -w
             -X main.version=#{version}
-            -X main.commit=#{Utils.git_short_head}
+            -X main.commit=1c64bee
             -X main.buildDate=#{Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ")}
             -X main.goVersion=#{Formula["go"].version}
+            -X main.builtBy=homebrew
           ]
           system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/tokenizer"
         end
@@ -133,19 +141,21 @@ class Tokenizer < Formula
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.3/tokenizer_0.0.3_linux_arm64.tar.gz"
-      sha256 "1caaf50365e434a31d89d541b28dbbaa02e6410719102f0259233c12e946803e"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.4/tokenizer_0.0.4_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "11062b05628de586aa93c8941633d9781ec1a250768461bfbf63d036b19ce42c"
       def install
         if build.bottle?
           bin.install "tokenizer"
         else
           # Build from source with version information
+          # Note: buildDate is the actual build time (now), not the commit date
           ldflags = %W[
             -s -w
             -X main.version=#{version}
-            -X main.commit=#{Utils.git_short_head}
+            -X main.commit=1c64bee
             -X main.buildDate=#{Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ")}
             -X main.goVersion=#{Formula["go"].version}
+            -X main.builtBy=homebrew
           ]
           system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/tokenizer"
         end
