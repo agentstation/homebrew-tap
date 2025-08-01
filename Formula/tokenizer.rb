@@ -2,7 +2,7 @@ class Tokenizer < Formula
   desc "High-performance tokenizer implementations in Go with unified CLI"
   homepage "https://github.com/agentstation/tokenizer"
   url "https://github.com/agentstation/tokenizer/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "placeholder_sha256_will_be_updated_after_release"
+  sha256 "0a0a2725b792b5a02f0f6254f6a167bd2b903c882c69bca90230c8777c83f64c"
   license "MIT"
   head "https://github.com/agentstation/tokenizer.git", branch: "master"
 
