@@ -2,7 +2,7 @@
 cask "tokenizer" do
   desc "High-performance tokenizer implementations in Go with unified CLI"
   homepage "https://github.com/agentstation/tokenizer"
-  version "0.0.6"
+  version "0.0.7"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,23 +15,23 @@ cask "tokenizer" do
 
   on_macos do
     on_intel do
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.6/tokenizer_0.0.6_darwin_x86_64.tar.gz"
-      sha256 "655bb99493ac1a24904194e6d74a7ebd9cc4e2652894dbb3ca3d3920b297d9c7"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.7/tokenizer_0.0.7_darwin_x86_64.tar.gz"
+      sha256 "1e285ff789ac3c6613ae5699a9c972ab9a75bbb139b4ab528ed914b4b76fc182"
     end
     on_arm do
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.6/tokenizer_0.0.6_darwin_arm64.tar.gz"
-      sha256 "eae191bf3b2a0b2294a2e7c82c04368691aa5a672b59b9c4f2889732f395f0a0"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.7/tokenizer_0.0.7_darwin_arm64.tar.gz"
+      sha256 "1adb332a1ae8997ee4bbe49fabd56dfa32e46ab9b5ab21fd7552f35857127d25"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.6/tokenizer_0.0.6_linux_x86_64.tar.gz"
-      sha256 "13d7261c242783d2d6585338667353cea932cad88e4f42e6c01815a27a4ae4ef"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.7/tokenizer_0.0.7_linux_x86_64.tar.gz"
+      sha256 "6878830f8d1dee64d18eaa5595c14aa97338155a90e052bc3364d7c09b7de13d"
     end
     on_arm do
-      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.6/tokenizer_0.0.6_linux_arm64.tar.gz"
-      sha256 "02694a751dcd70a13586e30e7a330f5bd9f4e0d234739dff32f167d9a5486ddc"
+      url "https://github.com/agentstation/tokenizer/releases/download/v0.0.7/tokenizer_0.0.7_linux_arm64.tar.gz"
+      sha256 "4b9ef055e38f2499b044ae0a4aae3fdbf425a680075520bc6ee4b90c1580d30a"
     end
   end
 
@@ -49,7 +49,7 @@ cask "tokenizer" do
     "Tokenizer has been installed! 🚀"
     ""
     "Quick start:"
-    "  tokenizer llama3 encode "Hello, world!"     # Encode text to tokens"
+    "  tokenizer llama3 encode 'Hello, world!'     # Encode text to tokens"
     "  tokenizer llama3 decode 128000 9906 128001  # Decode tokens to text"
     "  tokenizer llama3 info                       # Show tokenizer info"
     "  tokenizer --help                            # Show all commands"
