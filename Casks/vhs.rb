@@ -16,22 +16,22 @@ cask "vhs" do
   on_macos do
     on_intel do
       url "https://github.com/agentstation/vhs/releases/download/v0.10.0-as.1/vhs_0.10.0-as.1_darwin_x86_64.tar.gz"
-      sha256 "0562eb904731a0016fdb755b92584b98ef2466c84d3707bd65ad8f7d8d88a2ba"
+      sha256 "59514521dc6328e92834d1255ae8cb788481b7df48a8a98cf94d063b1c90e1d5"
     end
     on_arm do
       url "https://github.com/agentstation/vhs/releases/download/v0.10.0-as.1/vhs_0.10.0-as.1_darwin_arm64.tar.gz"
-      sha256 "1714814864673c9e157af4c35263724dc8b42d9bf8b97bdd19599b44729437bc"
+      sha256 "d7e820696280f229fe0ae70b017f3e850094eb5d5f5166fee8615002e1c1511a"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/agentstation/vhs/releases/download/v0.10.0-as.1/vhs_0.10.0-as.1_linux_x86_64.tar.gz"
-      sha256 "3d61cc5ed62c115e68d5f127e84cae3986dd75ce7903add525986b713734255e"
+      sha256 "1ea43443c01c3c837f295168bf0ca1ed0109208ff3eb7ffe1ab373d978a5bce0"
     end
     on_arm do
       url "https://github.com/agentstation/vhs/releases/download/v0.10.0-as.1/vhs_0.10.0-as.1_linux_arm64.tar.gz"
-      sha256 "11d826eb4ef391eead66d8627469ba290d5163e82c066c08528874e1e90152cf"
+      sha256 "e03ab197356750ae9691ce554fd30fdf9ea84765e6f563640708d0068bf24aaa"
     end
   end
 
