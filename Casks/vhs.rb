@@ -2,7 +2,7 @@
 cask "vhs" do
   desc "A tool for recording terminal GIFs and SVGs"
   homepage "https://github.com/agentstation/vhs"
-  version "0.10.0-as.1"
+  version "0.10.0-as.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,26 +12,30 @@ cask "vhs" do
   bash_completion "completions/vhs.bash"
   zsh_completion "completions/vhs.zsh"
   fish_completion "completions/vhs.fish"
+  depends_on formula: [
+      "ffmpeg",
+      "ttyd",
+    ]
 
   on_macos do
     on_intel do
-      url "https://github.com/agentstation/vhs/releases/download/v0.10.0-as.1/vhs_0.10.0-as.1_darwin_x86_64.tar.gz"
-      sha256 "59514521dc6328e92834d1255ae8cb788481b7df48a8a98cf94d063b1c90e1d5"
+      url "https://github.com/agentstation/vhs/releases/download/v0.10.0-as.2/vhs_0.10.0-as.2_darwin_x86_64.tar.gz"
+      sha256 "2f396ae2f2c6c660ec4914a9c98556b2b72a405e0442e0589bf2941e9233ff44"
     end
     on_arm do
-      url "https://github.com/agentstation/vhs/releases/download/v0.10.0-as.1/vhs_0.10.0-as.1_darwin_arm64.tar.gz"
-      sha256 "d7e820696280f229fe0ae70b017f3e850094eb5d5f5166fee8615002e1c1511a"
+      url "https://github.com/agentstation/vhs/releases/download/v0.10.0-as.2/vhs_0.10.0-as.2_darwin_arm64.tar.gz"
+      sha256 "c5d63dd3b6e258a463476cce7ec1871432a3634d28040e6e4ac60448ff66284d"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/agentstation/vhs/releases/download/v0.10.0-as.1/vhs_0.10.0-as.1_linux_x86_64.tar.gz"
-      sha256 "1ea43443c01c3c837f295168bf0ca1ed0109208ff3eb7ffe1ab373d978a5bce0"
+      url "https://github.com/agentstation/vhs/releases/download/v0.10.0-as.2/vhs_0.10.0-as.2_linux_x86_64.tar.gz"
+      sha256 "0f364ecd522f09ec9fb27c7496d5a0de8de93e7dbfa813c5cb0d971f4dddb10e"
     end
     on_arm do
-      url "https://github.com/agentstation/vhs/releases/download/v0.10.0-as.1/vhs_0.10.0-as.1_linux_arm64.tar.gz"
-      sha256 "e03ab197356750ae9691ce554fd30fdf9ea84765e6f563640708d0068bf24aaa"
+      url "https://github.com/agentstation/vhs/releases/download/v0.10.0-as.2/vhs_0.10.0-as.2_linux_arm64.tar.gz"
+      sha256 "b373c8e975fb684126058ea4ad2fb5bcc04e10b7b23b8aea84b122d91e26e1df"
     end
   end
 
