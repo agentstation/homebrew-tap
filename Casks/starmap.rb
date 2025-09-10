@@ -3,7 +3,7 @@ cask "starmap" do
   name "starmap"
   desc "AI Model Catalog System - Discover, compare, and sync AI models across providers"
   homepage "https://github.com/agentstation/starmap"
-  version "0.0.12"
+  version "0.0.13"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "starmap" do
   on_macos do
     on_intel do
       url "https://github.com/agentstation/starmap/releases/download/v#{version}/starmap_#{version}_darwin_x86_64.tar.gz"
-      sha256 "0dca85097f244870855e0a2e4fd56330c6f782f98c532a76446e45c15be38766"
+      sha256 "8d6beb00affa50e467efa88887de00ddd44da2606ee33fd57c890278b0ca663d"
     end
     on_arm do
       url "https://github.com/agentstation/starmap/releases/download/v#{version}/starmap_#{version}_darwin_arm64.tar.gz"
-      sha256 "2d8aa9c73478dc1d619aff58689de2a65fa9322b3c76a6c6b5664df89eb85ecf"
+      sha256 "374a1e5656a5528f599ebd5f8f9772181875eb394dc1c2573483e6f33ad41a74"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/agentstation/starmap/releases/download/v#{version}/starmap_#{version}_linux_x86_64.tar.gz"
-      sha256 "fc67678e5a0da67e77ef766772eb4a6873ae6c6047c1f8032311930e4922eb73"
+      sha256 "b3f36ecb5b6f50b01378a3c19430e6ac69846d722c5150973685f9459f8f4abb"
     end
     on_arm do
       url "https://github.com/agentstation/starmap/releases/download/v#{version}/starmap_#{version}_linux_arm64.tar.gz"
-      sha256 "ece2570495c0a93e1e29db6bc600252b2936442cbbb503e9418ce422fe333a9e"
+      sha256 "a03cb09e13460e53d340f49875730a4023862615fe4942340be5819c85132f1e"
     end
   end
 
