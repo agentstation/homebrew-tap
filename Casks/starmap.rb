@@ -3,7 +3,7 @@ cask "starmap" do
   name "starmap"
   desc "AI Model Catalog System - Discover, compare, and sync AI models across providers"
   homepage "https://github.com/agentstation/starmap"
-  version "0.0.21"
+  version "0.0.22"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "starmap" do
   on_macos do
     on_intel do
       url "https://github.com/agentstation/starmap/releases/download/v#{version}/starmap_#{version}_darwin_x86_64.tar.gz"
-      sha256 "c1f414ca306be5152ae886d0c297889453eeec7db9cc0fd99b4ab068cfedce85"
+      sha256 "6b5e1b4dedd9e8e871c86eec205a69f8226b40f578abffb4226f3eede4baf591"
     end
     on_arm do
       url "https://github.com/agentstation/starmap/releases/download/v#{version}/starmap_#{version}_darwin_arm64.tar.gz"
-      sha256 "1c71af7ab28f88ecd9e4b83626d5e1fa90b4d561bd302684f2da5af86cedf090"
+      sha256 "ffabfbb0ef76ac71941146a082f9fbcc67b4a653c53efc14fd3c4c65e6df93ae"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/agentstation/starmap/releases/download/v#{version}/starmap_#{version}_linux_x86_64.tar.gz"
-      sha256 "1fbbcc62c979a28864513e7c446264fa79615e88285391e877d30b7b68926046"
+      sha256 "9fe452b7f3a2c0ff0093614ef05c22dd186efb72f381a3602c5a814c12b31a53"
     end
     on_arm do
       url "https://github.com/agentstation/starmap/releases/download/v#{version}/starmap_#{version}_linux_arm64.tar.gz"
-      sha256 "554705157583ff5f2467bf0f5b8f9df31a7c6feba6317d0fd4a46328e62499e3"
+      sha256 "ce5172423ddabb8af6c1766a037d77c964c7d9420b87a658eb137f49b517c401"
     end
   end
 
@@ -46,8 +46,8 @@ cask "starmap" do
     "Starmap has been installed! ⭐🗺️"
     ""
     "Quick start:"
-    "  starmap list models              # List all AI models"
-    "  starmap fetch models --provider openai  # Fetch live model data"
+    "  starmap models list              # List all AI models"
+    "  starmap providers fetch openai   # Fetch live model data"
     "  starmap update                   # Update entire catalog"
     "  starmap --help                   # Show all commands"
     ""
