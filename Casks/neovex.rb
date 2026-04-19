@@ -2,7 +2,7 @@ cask "neovex" do
   name "neovex"
   desc "Self-hosted JavaScript backend runtime powered by V8"
   homepage "https://github.com/agentstation/neovex"
-  version "0.1.14"
+  version "0.1.15"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,18 +17,18 @@ cask "neovex" do
 
     on_arm do
       url "https://github.com/agentstation/neovex/releases/download/v#{version}/neovex_darwin_arm64.tar.gz"
-      sha256 "51ecf44fae1fc527519ca46b45a72897f35125f480c69db7c4cff62f0ebeabcf"
+      sha256 "5ef4e21193fdd7957d596450d70cd07d058d4785f560120d7507b89060e8ff59"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/agentstation/neovex/releases/download/v#{version}/neovex_linux_x86_64.tar.gz"
-      sha256 "4186a8a0194bec5a17724263970d23e5cb2b5c8057832eee0fbeb808004371f7"
+      sha256 "219140d7ca08222d26b5474f52f13cbcd36347e2c86daee9a9f79e15ee31f637"
     end
     on_arm do
       url "https://github.com/agentstation/neovex/releases/download/v#{version}/neovex_linux_arm64.tar.gz"
-      sha256 "2db58826d9e9acc664e8110c19a0634717e1096d1f174d629a594203ef5aa0f4"
+      sha256 "8d4f15a54ebadb156f12f26b3daef074336e37e167df9e33c5059d83f296ab2d"
     end
   end
 
