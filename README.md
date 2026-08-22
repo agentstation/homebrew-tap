@@ -12,6 +12,14 @@ brew tap agentstation/tap
 
 Casks install pre-built binaries from GitHub releases.
 
+### ago
+
+A restriction-only Go linter. Every rule rejects a legal Go construct to keep a codebase in a smaller, more predictable subset of the language.
+
+```bash
+brew install agentstation/tap/ago
+```
+
 ### neovex
 
 Self-hosted JavaScript backend runtime powered by V8.
