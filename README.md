@@ -8,6 +8,9 @@ This is the official [Homebrew](https://brew.sh) tap for AgentStation tools.
 brew tap agentstation/tap
 ```
 
+Homebrew 6 requires trust for packages from third-party taps. The commands below
+trust each package separately. See [Homebrew tap trust](https://docs.brew.sh/Tap-Trust).
+
 ## Available Casks
 
 Casks install pre-built binaries from GitHub releases.
@@ -17,7 +20,8 @@ Casks install pre-built binaries from GitHub releases.
 A restriction-only Go linter. Every rule rejects a legal Go construct to keep a codebase in a smaller, more predictable subset of the language.
 
 ```bash
-brew install agentstation/tap/ago
+brew trust --cask agentstation/tap/ago
+brew install --cask agentstation/tap/ago
 ```
 
 ### neovex
@@ -25,7 +29,8 @@ brew install agentstation/tap/ago
 Self-hosted JavaScript backend runtime powered by V8.
 
 ```bash
-brew install agentstation/tap/neovex
+brew trust --cask agentstation/tap/neovex
+brew install --cask agentstation/tap/neovex
 ```
 
 ### starmap
@@ -33,7 +38,17 @@ brew install agentstation/tap/neovex
 AI Model Catalog System - Discover, compare, and sync AI models across providers.
 
 ```bash
-brew install agentstation/tap/starmap
+brew trust --cask agentstation/tap/starmap
+brew install --cask agentstation/tap/starmap
+```
+
+### starport
+
+OpenAI- and OpenRouter-compatible LLM inference gateway.
+
+```bash
+brew trust --cask agentstation/tap/starport
+brew install --cask agentstation/tap/starport
 ```
 
 ### tokenizer
@@ -41,7 +56,8 @@ brew install agentstation/tap/starmap
 High-performance tokenizer implementations in Go with unified CLI. Features Llama 3 tokenizer with exact compatibility, streaming support, and comprehensive tooling.
 
 ```bash
-brew install agentstation/tap/tokenizer
+brew trust --cask agentstation/tap/tokenizer
+brew install --cask agentstation/tap/tokenizer
 ```
 
 ### vhs
@@ -49,7 +65,8 @@ brew install agentstation/tap/tokenizer
 A tool for recording terminal GIFs and SVGs. AgentStation fork with SVG output support.
 
 ```bash
-brew install agentstation/tap/vhs
+brew trust --cask agentstation/tap/vhs
+brew install --cask agentstation/tap/vhs
 ```
 
 ## Available Formulas
@@ -61,15 +78,19 @@ Formulas build from source.
 Graph execution engine for LLM workflows - CLI tool for executing workflows defined as graphs.
 
 ```bash
-brew install agentstation/tap/pocket
+brew trust --formula agentstation/tap/pocket
+brew install --HEAD --formula agentstation/tap/pocket
 ```
+
+Pocket has no tagged CLI release. The Homebrew formula builds the current `master` branch with `--HEAD`.
 
 ### tydirium
 
 Email authentication checker - "It's an older email, sir, but it checks out."
 
 ```bash
-brew install agentstation/tap/tydirium
+brew trust --formula agentstation/tap/tydirium
+brew install --formula agentstation/tap/tydirium
 ```
 
 ## Alternative Installation Methods
