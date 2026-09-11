@@ -1,8 +1,6 @@
 class Pocket < Formula
   desc "Graph execution engine for LLM workflows - CLI tool for executing workflows defined as graphs"
   homepage "https://github.com/agentstation/pocket"
-  url "https://github.com/agentstation/pocket/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "placeholder_sha256_will_be_updated_after_release"
   license "MIT"
   head "https://github.com/agentstation/pocket.git", branch: "master"
 

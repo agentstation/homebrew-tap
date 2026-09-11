@@ -12,7 +12,7 @@ cask "neovex" do
 
   on_macos do
     depends_on arch: :arm64
-    depends_on macos: ">= :sonoma"
+    depends_on macos: :sonoma
     depends_on formula: "slp/krunkit/krunkit"
 
     on_arm do
@@ -32,9 +32,9 @@ cask "neovex" do
     end
   end
 
-  postflight do
-    if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", staged_path.to_s], sudo: false
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}"], sudo: false
     end
   end
 

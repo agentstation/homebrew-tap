@@ -34,9 +34,9 @@ cask "ago" do
 
   binary "ago"
 
-  postflight do
-    if OS.mac? && system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/ago"], sudo: false
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/ago"], sudo: false
     end
   end
 
