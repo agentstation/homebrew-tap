@@ -24,7 +24,8 @@ brew trust --cask agentstation/tap/goago
 brew install --cask agentstation/tap/goago
 ```
 
-For an existing `ago` installation, run `brew migrate --cask ago` after you update the tap.
+For an existing `ago` installation, update the tap, then run `brew migrate --cask ago` and `brew upgrade --cask agentstation/tap/goago`.
+The first command changes the installed package name. The second installs the new executable.
 
 ### neovex
 
