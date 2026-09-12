@@ -15,14 +15,16 @@ trust each package separately. See [Homebrew tap trust](https://docs.brew.sh/Tap
 
 Casks install pre-built binaries from GitHub releases.
 
-### ago
+### goago
 
-A restriction-only Go linter. Every rule rejects a legal Go construct to keep a codebase in a smaller, more predictable subset of the language.
+Pronounced **go ago**. A linter that enforces one way to write Go for humans and coding agents.
 
 ```bash
-brew trust --cask agentstation/tap/ago
-brew install --cask agentstation/tap/ago
+brew trust --cask agentstation/tap/goago
+brew install --cask agentstation/tap/goago
 ```
+
+For an existing `ago` installation, run `brew migrate --cask ago` after you update the tap.
 
 ### neovex
 
