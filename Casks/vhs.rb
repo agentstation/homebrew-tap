@@ -3,7 +3,7 @@ cask "vhs" do
   name "vhs"
   desc "A tool for recording terminal GIFs and SVGs"
   homepage "https://github.com/agentstation/vhs"
-  version "0.11.1"
+  version "0.12.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -21,22 +21,22 @@ cask "vhs" do
   on_macos do
     on_intel do
       url "https://github.com/agentstation/vhs/releases/download/v#{version}/vhs_#{version}_darwin_x86_64.tar.gz"
-      sha256 "aea640ba594014f49326ccf676a49959d4a21a5dc7470824668e9fbfd989f317"
+      sha256 "4196634d731b274caf2e302208a92c2bb973faaa74527f144ebd15ef4686c3e7"
     end
     on_arm do
       url "https://github.com/agentstation/vhs/releases/download/v#{version}/vhs_#{version}_darwin_arm64.tar.gz"
-      sha256 "74738c908c3404ccabafc645903811a2004045cb30d52b46897d896cd541ac2d"
+      sha256 "082f00e1dc08a595bb64b098363dffa7ffa0aad89a674b469aac97d27c1e7686"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/agentstation/vhs/releases/download/v#{version}/vhs_#{version}_linux_x86_64.tar.gz"
-      sha256 "ed200fef77b4274612a79f539519ce5299ccae00566140686a329931b971d332"
+      sha256 "911e2e0f444923a49a812f8661eb838787231d1294c1331efafdbaf539a200f4"
     end
     on_arm do
       url "https://github.com/agentstation/vhs/releases/download/v#{version}/vhs_#{version}_linux_arm64.tar.gz"
-      sha256 "68bc1fdf129978730fba5fd5729b25043d97d095642fca22ca2a26eb55cc625c"
+      sha256 "8c21460605595b9f64e949eca9fc63a5b5d1ba455d7c2632118c84ab89a434f8"
     end
   end
 
