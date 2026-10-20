@@ -9,22 +9,22 @@ cask "starmap" do
     end
   end
 
-  version "0.17.0"
+  version "0.17.2"
 
   on_macos do
     on_arm do
-      sha256 "548e1323be026e4d41258269d07174b3eae618f1fb511a0039e7098e38e5181d"
+      sha256 "bab83ff8b967eb918f0d15ed524007b2d45bbcc36c4232d2bdf486a61baf95a7"
       url "https://github.com/agentstation/starmap/releases/download/v#{version}/starmap_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "975c453098e1528c669f4018b22c8ad3e7a147415d9a9f5ecfee991ea66e6f0b"
+      sha256 "f2417e778fe2ddf6e0397efbaa5631deee35cf78c7a4018dfc0348371a3526bb"
       url "https://github.com/agentstation/starmap/releases/download/v#{version}/starmap_#{version}_linux_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "9bce1397b0b9f1da79863e614e2efa48f2ca6db4e27b299e9ae12e92cd8a49d3"
+      sha256 "6850e0efbb026acd0719ec15261a520f0dd07cdda13ed025ccd6636a0c9d9468"
       url "https://github.com/agentstation/starmap/releases/download/v#{version}/starmap_#{version}_linux_arm64.tar.gz"
     end
   end
