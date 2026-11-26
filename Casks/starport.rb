@@ -9,29 +9,29 @@ cask "starport" do
     end
   end
 
-  version "1.3.0"
+  version "1.4.0"
 
   on_macos do
     on_arm do
-      sha256 "3b6dd19bb7e9e88de84ac6c795128f06e96cfb7eaf50f62f784c6f1a849d96ca"
+      sha256 "44f030c888514f9fe02a12f72a0273772cd944b9334346e9d03fdbdb12199de3"
       url "https://github.com/agentstation/starport/releases/download/v#{version}/starport_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "9f3e13682bf38f32317449f9d3a1195fb48e82e4f0cf960a006968d4b84d2323"
+      sha256 "3f158b523410a314422be3c33077f91577dadcd9d839dd11bf0598b16b5c77c2"
       url "https://github.com/agentstation/starport/releases/download/v#{version}/starport_#{version}_linux_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "6eb508d8342ca80cc895c3a4513c13ff5b815691d6c429d517627c1699b79afe"
+      sha256 "bb9ea0cfe73bbf955d682f6c679c028fb7641f5776d7ba97e1a6941c7b17b53b"
       url "https://github.com/agentstation/starport/releases/download/v#{version}/starport_#{version}_linux_arm64.tar.gz"
     end
   end
 
   name "starport"
   desc "OpenAI- and OpenRouter-compatible LLM inference gateway"
-  homepage "https://github.com/agentstation/starport"
+  homepage "https://starport.agentstation.ai"
 
   livecheck do
     skip "Auto-generated on release."
