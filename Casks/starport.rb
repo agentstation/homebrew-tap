@@ -9,22 +9,22 @@ cask "starport" do
     end
   end
 
-  version "1.4.1"
+  version "1.4.2"
 
   on_macos do
     on_arm do
-      sha256 "8cf9a6aa4847c46cd96a6877115262b6b84185746bd39826709287eddf72de2f"
+      sha256 "918d7a4c0ef3e7a0c70886731efd3621baf4eedd6c7f679e6fe99d9523c5ede5"
       url "https://github.com/agentstation/starport/releases/download/v#{version}/starport_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "763843e2715d3feb72661a06176f56f75992d71f5e93028778a0740f09028fbb"
+      sha256 "2052c518e54b7314f2e3580a563308ac1c6286030e1286d8c6f7a0128dc10332"
       url "https://github.com/agentstation/starport/releases/download/v#{version}/starport_#{version}_linux_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "ee78e77e404fd1de03cfdedb72b877bc792c8309bcfd945771f7b490bca0a5b6"
+      sha256 "84f221833a9a9b03e7fa13f9bd5976dc809ac63314404718d4ca142b93693c2a"
       url "https://github.com/agentstation/starport/releases/download/v#{version}/starport_#{version}_linux_arm64.tar.gz"
     end
   end
